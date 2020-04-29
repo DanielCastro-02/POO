@@ -2,7 +2,7 @@ PImage plantilla;
 //contador pixels negros
 float conegro=0;
 color pxnegro= color (0, 0, 0);
-float mul=0.1;
+float mul=0.03;
 // posicion del tangram
 int X=400;
 int Y=200;
@@ -151,14 +151,6 @@ void keyPressed() {
     if (keyCode == LEFT) {
       coord [coo][0]= coord [coo][0] - 1;
     }
-    if (key=='a' || key=='A') {
-      colorsel [coo][0]=137; 
-      colorsel [coo][1]=135;
-      colorsel [coo][2]=135;
-      colorori [coo][0]=0;
-      colorori [coo][1]=0;
-      colorori [coo][2]=0;
-    }
   }
   if ((coo > 4) && (dist(coord [coo][1], coord [coo][2], mouseX, mouseY)<20)&&(keyPressed))
     if (keyCode == UP ) {
@@ -181,7 +173,6 @@ void copixel() {
       conegro++;
     }
   }
-  println(conegro);
 }
 
 void setup () {
@@ -192,7 +183,7 @@ void setup () {
 
 void draw () {
 
-  
+
   copixel();
   image(plantilla, 0, 0);
   noStroke();
@@ -201,7 +192,7 @@ void draw () {
   if (conegro <= (40104*mul)) {
 
     background(62, 162, 159 );
-    textSize(40);
+    textSize(55);
     text("GANASTE", 1000/3, 600/3);
   }
 }
