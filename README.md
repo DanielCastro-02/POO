@@ -6,12 +6,12 @@ Evidenciar los conceptos fundamentales de la programación orientada a objetos (
 
 ## Tareas
 
-En los directorios de este repositorio se encuentra la plantilla del Juego del *tangram* en varios lenguajes:
+En los directorios de este repositorio se encuentra la plantilla del Juego del *tangram* creado en dos lenguajes:
 
 * `Tangram`: Programación estructurada en _Processing_.
 * `TangramOO`: POO en _Processing_.
 
-empléelas de acuerdo al (o a los) lenguaje(s) con los que desee experimentar, para la realización de las siguientes tareas del juego:
+estas plantillas realizan las siguientes tareas:
 
 1. Dibujo de las piezas.
 2. Selección y manipulación de las piezas (ratón y teclado).
